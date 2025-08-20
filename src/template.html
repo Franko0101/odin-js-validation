@@ -5,5 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Project</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>Enter your data</h2>
+      <form novalidate>
+        <div class="input-row">
+          <label for="mail">E-mail</label>
+          <input type="email" name="mail" id="mail" autocomplete="username" required>
+          <span class="error" id="mail-error" aria-live="polite"></span>
+        </div>
+        
+        <div class="input-row">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="country">
+          <span class="error" id="country-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-row">
+          <label for="code">Postal Code</label>
+          <input type="text" name="code" id="code">
+          <span class="error" id="code-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-row">
+          <label for="pwd">Password</label>
+          <input 
+          type="password" 
+          name="pwd" 
+          id="pwd" 
+          autocomplete="new-password" 
+          required>
+          <span class="error" id="pwd-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-row">
+          <label for="pwd-conferm">Confirm Password</label>
+          <input 
+          type="password" 
+          name="pwd-conferm" 
+          id="pwd-conferm" 
+          autocomplete="new-password" 
+          required>
+          <span class="error" id="pwdconf-error" aria-live="polite"></span>
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Invia</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
